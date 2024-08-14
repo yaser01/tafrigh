@@ -15,8 +15,8 @@ class Downloader:
 
   def _config(self, download_archive: str | bool) -> dict[str, Any]:
     return {
-      'quiet': True,
-      'verbose': False,
+      'quiet': False,
+      'verbose': True,
       'format': 'bestaudio',
       'extract_audio': True,
       'outtmpl': os.path.join(self.output_dir, '%(id)s.%(ext)s'),
