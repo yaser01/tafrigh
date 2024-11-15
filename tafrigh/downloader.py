@@ -23,8 +23,7 @@ class Downloader:
       'ignoreerrors': True,
       'download_archive': download_archive,
       'playlist_items': self.playlist_items,
-      'password': '',
-      'username': 'oauth',
+      'cookiefile': 'cookies.txt',
       'postprocessors': [
         {
           'key': 'FFmpegExtractAudio',
